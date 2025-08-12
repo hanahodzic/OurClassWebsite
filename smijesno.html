@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8"/>
+<title>IV2 - Smiješna strana</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link rel="icon" href="slike/logo.png" type="image/png">
+</head>
+<body>
+ 
+<header>
+  <div class="header-inner">
+    <a href="home.html" class="logo">
+      <img src="slike/logo.png" alt="IV-2 Logo" class="logo-img"/>
+      <span>IV2 - Informacione tehnologije</span>
+    </a>      
+    <nav id="navMenu">
+      <a href="home.html">Naslovna</a>
+      <a href="ucenici.html">Učenici</a>
+      <a href="uspjesi.html">Naši uspjesi</a>
+      <a href="images.html">Galerija slika</a>
+      <a href="smijesno.html">Smiješna strana</a>
+      <a href="login.html">Prijavi se!</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <button id="modeToggle">🌓</button>
+  </div>
+</header>
+ 
+<main>
+  <section class="uvod-smijesno">
+    <h2>Smiješne uspomene</h2>
+    <p>Pogledaj neke od najsmješnijih trenutaka iz našeg razreda!</p>
+  </section>
+ 
+  <section class="carousel-section">
+    <h3>Slideshow smiješnih slika</h3>
+    <div class="carousel">
+      <div class="carousel-images">
+        <div class="slide">
+          <img alt="Smijeh 1" src="slike/slika5.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 2" src="slike/slika6.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 3" src="slike/slika17.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 4" src="slike/slika21.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 5" src="slike/slika22.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 6" src="slike/slika30.jpg"/>
+        </div>
+        <div class="slide">
+          <img alt="Smijeh 7" src="slike/slika35.jpg"/>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <h1 style="text-align: center;">Izjave učenika</h1>
+    <blockquote>
+      <p><strong>Azur Agić:</strong> "Prvi u dnevniku = prvi odgovara."</p>
+      <p><strong>Mak Alić:</strong> I Grbavica može bit daleko... ako dovoljno kasniš.</p>
+      <p><strong>Harun Avdić:</strong> "Odakle smo krenuli, Avdiću? Iz škole." (Španija vibes)</p>
+      <p><strong>Timur Bećirbegović:</strong> Supercell sound svaki put kad se neko prozove.</p>
+      <p><strong>Adin Bijelonja:</strong> "Paartije!"<br>"Stilusom, naravno."<br>Milja izostanaka, ali tu je srcem.</p>
+      <p><strong>Andrea Božinović:</strong> Ispala iz autobusa. Zaboravila na inerciju... i gravitaciju.</p>
+      <p><strong>Arman Bucalović:</strong> "Žulian."<br>"Rokovnik? Nisam čitao tu knjigu, ali mnogo volim čitati."</p>
+      <p><strong>Alem Čuturić:</strong> Nakon dvije sedmice skontao da mu je torba ostala u kabinetu programiranja.<br>Uvijek glumi ženu – s više uvjerenja nego svi u dramskoj zajedno.</p>
+      <p><strong>Emrah Jakubović:</strong> Uvijek prepisuje, uvijek ga uhvate. Dosljedan do kraja.</p>
+      <p><strong>Kerim Karišik:</strong> "Preklinjem vas..."<br>Prepisivao programiranje – unio dinare umjesto maraka.</p>
+      <p><strong>Rijad Kašmo:</strong> "Hoćemol crispovnjaču?"<br>"Šta ti je bilo najteže oko škole? Ramazan – nisam mogao da jedem."</p>
+      <p><strong>Kemal Kršlak:</strong> "Jeste li spremni da odgovarate? Spreman sam... za psihijatrije."<br>"Šta je s rukom? Previše koda."<br>"Imal’ ko punjač? Imam ti ja kikiriki."<br>"Može l’ se test pomjerit?"</p>
+      <p><strong>Faris Maglajlija:</strong> Mangomanija, mahagoni, Mangladesh, Mangafić, Maglajlić – sve varijacije jednog prezimena.</p>
+      <p><strong>Majra Mališević:</strong> Mejrem, Makirolo, Mališić – niko nije siguran kako da je prozove.<br>Režeš nokte na času – multitasking level: pro.</p>
+      <p><strong>Harun Sudić:</strong> "Sudiću, ostavi telefon!" – "Opet ja?"<br>Pojeo orah na koji je alergičan, a odbijao da ode u hitnu jer nije imao zdravstvenu knjižicu,</p>
+      <p><strong>Afan Suljević:</strong> "Mogli ste nam cijelu knjigu dat, ne bi razlika bila velika."<br>"6. maj će nam bit drugi rođendan – samo da ne gledam školu."<br>"U junu imamo pismenu... i još par testova poslije."</p>
+      <p><strong>Vedad Šabović:</strong> Plivao do škole za vrijeme poplava – doslovno.<br>"Šaboviću, duvaššš!"<br>"Svi imamo svoju fasadu."</p>
+    </blockquote>
+  </section>
+</main>
+ 
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Kontaktirajte nas</h3>
+      <p>Treća gimnazija Sarajevo</p>
+      <p>Email: cetvrti.dva.it@gmail.com</p>
+    </div>
+    <div class="footer-column">
+      <h3>Korisni linkovi</h3>
+      <p><a href="https://mo.ks.gov.ba/">Ministarstvo za nauku, visoko obrazovanje i mlade</a></p>
+      <p><a href="https://treca-gimnazija.edu.ba/">Treća gimnazija Sarajevo</a></p>
+      <p><a href="https://emis.edu.ba/#/auth/prijava">E-dnevnik</a></p>
+      <p><a href="https://propisi.ks.gov.ba/content/pravilnik-o-pra%C4%87enju-vrednovanju-i-ocjenjivanju-u%C4%8Denika-osnovnih-i-srednjih-%C5%A1kola-u-0">Pravilnik o ocjenjivanju učenika</a></p>
+    </div>
+    <div class="footer-column">
+      <h3>O nama</h3>
+      <p>IV-2 odjeljenje je dio najljepše sarajevske gimnazije na Vilsonovom šetalištu, Treće gimnazije.</p>
+      <p>Kroz školovanje, učenici smjera Informacione tehnologije su ostvarili niz zapaženih rezultata, kao i nagrada.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 IV2 Informacione tehnologije</p>
+  </div>
+</footer>
+ 
+<script>
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  if (nav) nav.classList.toggle("show");
+}
+window.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("modeToggle");
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  }
+});
+</script>
+ <script src="js/carousel.js"></script>
+</body>
+</html>

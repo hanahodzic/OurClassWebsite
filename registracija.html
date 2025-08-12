@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>IV2 - Registracija</title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link rel="icon" href="slike/logo.png" type="image/png">
+</head>
+<body>
+
+<div class="form-wrapper">
+  <div class="form-card">
+    <h2 class="form-title">Registracija</h2>
+    <form id="registrationForm" class="form">
+      <div class="form-group">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+      </div>
+
+      <button type="submit" class="form-btn">Registruj se</button>
+    </form>
+
+    <p class="form-note">Već imaš račun? <a href="login.html">Prijavi se ovdje</a>.</p>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>IV2 - Naši uspjesi</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="slike/logo.png" type="image/png">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="home.html" class="logo">
+        <img src="slike/logo.png" alt="IV-2 Logo" class="logo-img" />
+        <span>IV2 - Informacione tehnologije</span>
+      </a>
+      <nav id="navMenu">
+        <a href="home.html">Naslovna</a>
+        <a href="ucenici.html">Učenici</a>
+        <a href="uspjesi.html">Naši uspjesi</a>
+        <a href="images.html">Galerija slika</a>
+        <a href="smijesno.html">Smiješna strana</a>
+        <a href="login.html">Prijavi se!</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button id="modeToggle">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="uvod-uspjesi">
+        <h2>Postignuća naših učenika</h2>
+        <p>Ovdje ćemo predstaviti sve uspjehe naših učenika – takmičenja, priznanja, diplome...</p>
+      </div>
+
+      <input id="searchInput" type="text" placeholder="Pretraži učenika..." />
+
+      <ul id="achievementList">
+        
+      </ul>
+
+      <br>
+
+      <button id="sortBtn">Sortiraj po imenu</button>
+    </section>
+
+    <section>
+      <h3>Dodaj novi uspjeh</h3>
+      <form id="addSuccessForm">
+        <input type="text" placeholder="Ime učenika" required />
+        <input type="text" placeholder="Opis uspjeha" required />
+        <button type="submit">Dodaj</button>
+      </form>
+    </section>
+  </main>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p style="margin-left: 5%;"></p>
+    </div>
+  </div>
+
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Kontaktirajte nas</h3>
+        <p>Treća gimnazija Sarajevo</p>
+        <p>Email: cetvrti.dva.it@gmail.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Korisni linkovi</h3>
+        <p><a href="https://mo.ks.gov.ba/">Ministarstvo za nauku, visoko obrazovanje i mlade</a></p>
+        <p><a href="https://treca-gimnazija.edu.ba/">Treća gimnazija Sarajevo</a></p>
+        <p><a href="https://emis.edu.ba/#/auth/prijava">E-dnevnik</a></p>
+        <p><a href="https://propisi.ks.gov.ba/content/pravilnik-o-pra%C4%87enju-vrednovanju-i-ocjenjivanju-u%C4%8Denika-osnovnih-i-srednjih-%C5%A1kola-u-0">Pravilnik o ocjenjivanju učenika</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>O nama</h3>
+        <p>IV-2 odjeljenje je dio najljepše sarajevske gimnazije na Vilsonovom šetalištu, Treće gimnazije.</p>
+        <p>Kroz školovanje, učenici smjera Informacione tehnologije su ostvarili niz zapaženih rezultata, kao i nagrada.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IV2 Informacione tehnologije</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      if (nav) nav.classList.toggle("show");
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("modeToggle");
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
+      }
+    });
+  </script>
+
+  <script type="module" src="/js/uspjesi.js"></script>
+</body>
+
+</html>

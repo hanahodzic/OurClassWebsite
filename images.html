@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <title>IV2 - Galerija slika</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="slike/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="home.html" class="logo">
+      <img src="slike/logo.png" alt="IV-2 Logo" class="logo-img" />
+      <span>IV2 - Informacione tehnologije</span>
+    </a>
+    <nav id="navMenu">
+      <a href="home.html">Naslovna</a>
+      <a href="ucenici.html">Učenici</a>
+      <a href="uspjesi.html">Naši uspjesi</a>
+      <a href="images.html">Galerija slika</a>
+      <a href="smijesno.html">Smiješna strana</a>
+      <a href="login.html">Prijavi se!</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <button id="modeToggle">🌓</button>
+  </div>
+</header>
+
+<main>
+  <section class="uvod-galerija">
+    <h2>Galerija slika</h2>
+    <p>Ovdje se nalaze slike učenika i zajedničke slike razreda.</p>
+  </section>
+
+  <section class="galerija">
+    <h3>Razredne fotografije</h3>
+    <div class="slike-grid">
+      <figure>
+        <img src="slike/prviraz.jpg" alt="Prvi razred" />
+        <figcaption>Prvi razred</figcaption>
+      </figure>
+      <figure>
+        <img src="slike/drugiraz.jpg" alt="Drugi razred" />
+        <figcaption>Drugi razred</figcaption>
+      </figure>
+    </div>
+
+    <div class="slike-grid">
+      <figure>
+        <img src="slike/treciraz.jpg" alt="Treći razred" />
+        <figcaption>Treći razred</figcaption>
+      </figure>
+      <figure>
+        <img src="slike/cetvrtiraz.jpg" alt="Četvrti razred" />
+        <figcaption>Četvrti razred</figcaption>
+      </figure>
+    </div>
+
+    <h3>Izleti i druženja</h3>
+    <div class="slike-grid">
+      <figure>
+        <img src="slike/decembarski.jpg" alt="Slika 5" />
+        <figcaption>Decembarski dani kulture</figcaption>
+      </figure>
+    </div>
+
+
+  </section>
+</main>
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Kontaktirajte nas</h3>
+      <p>Treća gimnazija Sarajevo</p>
+      <p>Email: cetvrti.dva.it@gmail.com</p>
+    </div>
+    <div class="footer-column">
+      <h3>Korisni linkovi</h3>
+      <p><a href="https://mo.ks.gov.ba/" target="_blank">Ministarstvo za nauku</a></p>
+      <p><a href="https://treca-gimnazija.edu.ba/" target="_blank">Treća gimnazija Sarajevo</a></p>
+      <p><a href="https://emis.edu.ba/#/auth/prijava" target="_blank">E-dnevnik</a></p>
+      <p><a href="https://propisi.ks.gov.ba/content/pravilnik-o-pra%C4%87enju-vrednovanju-i-ocjenjivanju-u%C4%8Denika-osnovnih-i-srednjih-%C5%A1kola-u-0" target="_blank">Pravilnik o ocjenjivanju</a></p>
+    </div>
+    <div class="footer-column">
+      <h3>O nama</h3>
+      <p>IV-2 odjeljenje je dio najljepše sarajevske gimnazije na Vilsonovom šetalištu, Treće gimnazije.</p>
+      <p>Učenici smjera Informacione tehnologije su ostvarili niz zapaženih rezultata i nagrada.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 IV2 Informacione tehnologije</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("modeToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  });
+</script>
+
+</body>
+</html>

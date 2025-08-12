@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <title>Dobrodošli! | Naslovna stranica</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="icon" href="slike/logo.png" type="image/png" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="home.html" class="logo">
+        <img src="slike/logo.png" alt="IV-2 Logo" class="logo-img" />
+        <span>IV2 - Informacione tehnologije</span>
+      </a>
+      <nav id="navMenu">
+        <a href="home.html">Naslovna</a>
+        <a href="ucenici.html">Učenici</a>
+        <a href="uspjesi.html">Naši uspjesi</a>
+        <a href="images.html">Galerija slika</a>
+        <a href="smijesno.html">Smiješna strana</a>
+        <a href="login.html">Prijavi se!</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button id="modeToggle">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="pozdrav">
+      <div class="uvod-naslovna">
+        <h2>Dobrodošao/la, <span id="ime-ucenika"></span>!</h2>
+        <p>Drago nam je što si ovdje.</p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <p>
+        Naša generacija, posebna po svom duhu, prijateljstvu i zajedničkim uspjesima, ostavlja iza sebe trag ispisan smijehom, znanjem i nezaboravnim trenucima provedenim u klupama ove škole.
+        Ova stranica je naš pokušaj da zauvijek sačuvamo uspomene na jedno od najljepših životnih poglavlja.
+        <br><br>
+        Kroz fotografije, videozapise, anegdote, kreativne projekte i poruke profesora, želimo podijeliti dio atmosfere koja nas je pratila svih ovih godina.
+        Ovo nije samo oproštaj od školskih hodnika, već i proslava svega što smo zajedno prošli – od prvih školskih dana, preko izazova, pa sve do dana kada s ponosom nosimo titulu maturanata.
+        <br><br>
+        Treća gimnazija je bila mnogo više od škole – bila je druga kuća, mjesto gdje smo rasli, učili i postajali ono što jesmo danas. Hvala svima koji su bili dio tog puta.
+        <br><br>
+        Dobrodošli u naš svijet uspomena!
+      </p>
+    </section>
+
+    <section>
+      <img src="slike/Media.jpg" alt="Uspomene iz školskih dana" class="preview-img" />
+    </section>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Kontaktirajte nas</h3>
+        <p>Treća gimnazija Sarajevo</p>
+        <p>Email: cetvrti.dva.it@gmail.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Korisni linkovi</h3>
+        <p><a href="https://mo.ks.gov.ba/">Ministarstvo za nauku, visoko obrazovanje i mlade</a></p>
+        <p><a href="https://treca-gimnazija.edu.ba/">Treća gimnazija Sarajevo</a></p>
+        <p><a href="https://emis.edu.ba/#/auth/prijava">E-dnevnik</a></p>
+        <p><a href="https://propisi.ks.gov.ba/content/pravilnik-o-pra%C4%87enju-vrednovanju-i-ocjenjivanju-u%C4%8Denika-osnovnih-i-srednjih-%C5%A1kola-u-0">Pravilnik o ocjenjivanju učenika</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>O nama</h3>
+        <p>IV-2 odjeljenje je dio najljepše sarajevske gimnazije na Vilsonovom šetalištu, Treće gimnazije.</p>
+        <p>Kroz školovanje, učenici smjera Informacione tehnologije su ostvarili niz zapaženih rezultata, kao i nagrada.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IV2 Informacione tehnologije</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      if (nav) nav.classList.toggle("show");
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("modeToggle");
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
+      }
+    });
+  </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="js/ime.js"></script>
+</body>
+</html>
